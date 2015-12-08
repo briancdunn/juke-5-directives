@@ -4,7 +4,6 @@ app.directive('player', function (PlayerFactory) {
     restrict: 'E', //E means element
     templateUrl: '/templates/player.html',
     link: function (scope, element, attrs) {
-      console.log(scope);
       scope.getCurrentSong = PlayerFactory.getCurrentSong;
       scope.isPlaying = PlayerFactory.isPlaying;
       scope.forward = PlayerFactory.next;
