@@ -14,4 +14,6 @@ app.controller('PlayerCtrl', function ($scope, PlayerFactory) {
 		else PlayerFactory.resume();
 	};
 
+	
+	
 });
