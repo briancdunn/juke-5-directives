@@ -16,7 +16,9 @@ app.directive('player', function (PlayerFactory) {
       scope.toggle = function () {
         if (PlayerFactory.isPlaying()) PlayerFactory.pause();
         else PlayerFactory.resume();
+        console.log(scope.getCurrentSong());
       };
+
     }
   };
 });
